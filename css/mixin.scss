@@ -1,0 +1,156 @@
+@mixin between {
+	display: flex;
+	justify-content: space-between;
+}
+
+@mixin evenly {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+@mixin cent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin calin {
+	display: flex;
+	align-items: center;
+}
+
+@mixin cjust {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin cjustalin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin around {
+	display: flex;
+	justify-content: space-around;
+}
+
+@mixin our {
+	color: #FF8A63;
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+@mixin how {
+	color: #45525B;
+	font-family: Poppins, sans-serif;
+	font-size: 34px;
+	font-weight: lighter;
+}
+
+@mixin let {
+	color: #6F7278;
+	font-family: Poppins, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21.6px;
+}
+
+@mixin second {
+	padding: 15px 20px;
+	width: 250px;
+	height: 127px;
+
+	background: #FAFAFC;
+}
+
+@mixin left {
+	color: #45525B;
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 19.6px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+@mixin par {
+	padding: 8px 0;
+	color: #333;
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+}
+
+@mixin sans {
+	color: #45525B;
+	font-family: Poppins, sans-serif;
+}
+
+@mixin set {
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16.8px;
+	/* 140% */
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+@mixin h5f {
+	color: #FF8A63;
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 19.6px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+@mixin h6l {
+	padding: 10px 0;
+	color: #FFF;
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 100;
+	line-height: 22.4px;
+
+
+}
+
+@mixin shrift {
+	font-family: Poppins, sans-serif;
+	font-weight: 400;
+	text-align: center;
+}
+
+@mixin noshrift {
+	font-family: Poppins, sans-serif;
+	color: #FF8A63;
+	font-weight: 400;
+
+}
+
+@mixin pro {
+	font-weight: 400;
+	font-family: Poppins, sans-serif;
+
+}
+
+@mixin text {
+	font-family: Poppins, sans-serif;
+	text-align: center;
+	border-radius: 6px;
+	background: #FFF;
+	color: #45525B;
+	height: 44px;
+	flex-shrink: 0;
+}

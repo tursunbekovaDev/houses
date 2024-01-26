@@ -1,0 +1,696 @@
+@import "mixin";
+
+#header {
+	background: white;
+	width: 100%;
+	height: 80px;
+	@include calin;
+
+	.header {
+		@include calin;
+		@include around;
+
+		&__hamburger {
+			.menu {
+				width: 400px;
+				@include between;
+				flex-direction: row;
+				list-style-type: none;
+
+				li {
+					a {
+						color: #444;
+						font-family: Poppins, sans-serif;
+						font-size: 18px;
+						text-align: center;
+
+						&:hover {
+							transform: scaleX(1.1);
+							text-decoration-line: underline;
+						}
+					}
+				}
+			}
+
+			#menu-toggle {
+				display: none;
+			}
+		}
+
+		img {
+			margin-bottom: 15px;
+			display: block;
+		}
+	}
+}
+
+#hero {
+	min-height: 720px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.78)),
+		url("../img/61127627883dbb0802b613e3_Hero\ Background\ 1.png") no-repeat center/cover;
+
+	.hero {
+		@include cent;
+		@include column;
+
+		&--estate {
+			margin-top: 35vh;
+			width: 35%;
+			@include column;
+			@include cjustalin;
+			text-align: center;
+
+			h1 {
+				padding: 20px 0;
+				@include how
+			}
+		}
+
+		&--circle {
+			width: 64px;
+			height: 64px;
+			border-radius: 32px;
+			border: 2px solid #3A4443;
+			@include cjustalin;
+			margin-top: 160px;
+
+			img {
+				padding: 18px 0;
+				width: 50%;
+				height: 50%;
+			}
+		}
+	}
+}
+
+#house {
+	margin: 10% 0;
+	@include cjust;
+
+	.house {
+		@include between;
+		@include calin;
+
+		&__text {
+			@include column;
+			margin: 0 150px;
+
+			h5 {
+				@include our
+			}
+
+			h2 {
+				font-weight: lighter;
+				color: #45525B;
+				font-family: Poppins, sans-serif;
+				font-size: 48px;
+			}
+		}
+
+		&__interdum {
+			width: 100%;
+
+			p {
+				@include par
+			}
+
+			&--orn {
+				display: flex;
+				margin: 10px 0;
+
+				&__name {
+					margin-left: 10px;
+					@include column;
+					@include cjust;
+
+					h4 {
+						@include sans;
+						font-size: 16px;
+						padding: 5px 0;
+
+					}
+
+					h5 {
+						@include sans;
+						font-size: 12px;
+						@include set;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+#choose {
+	@include column;
+	@include calin;
+
+	.choose {
+		@include column;
+		@include calin;
+		@include between;
+
+		&--listing {
+			h4 {
+				@include our;
+				text-align: center;
+			}
+
+			h2 {
+				@include how;
+				text-align: center;
+			}
+
+			h5 {
+				@include let;
+				text-align: center;
+				padding: 15px 0;
+			}
+		}
+
+		&--locations {
+			@include evenly;
+
+			img {
+				margin-right: 30px;
+			}
+
+			&__design {
+				@include column;
+				@include evenly;
+				@include calin;
+
+				&--text {
+					@include second;
+					border-radius: 10px;
+					border: 1px solid rgba(202, 204, 209, 0.20);
+
+					h4 {
+						@include left;
+					}
+
+					h5 {
+						@include let;
+					}
+				}
+
+				&--old {
+					@include second;
+
+					h4 {
+						@include left;
+					}
+
+					h5 {
+						@include let;
+					}
+				}
+			}
+		}
+	}
+}
+
+#img {
+	margin: 80px 0;
+	min-height: 720px;
+	background: url("../img/IMAGE\ \(7\).png") no-repeat center/cover;
+
+}
+
+#villa {
+	.villa {
+		&--store {
+			h4 {
+				@include our;
+			}
+
+			h2 {
+				margin-bottom: 20px;
+				@include how;
+			}
+
+			p {
+				@include let;
+
+			}
+		}
+
+		&--from {
+			.swiper {
+				width: 100%;
+				height: 100%;
+				padding: 50px 0;
+			}
+
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				@include cjustalin;
+				@include column;
+
+				h4 {
+					margin: 10px 0;
+					color: hwb(220 44% 53%);
+					font-size: 12px;
+					line-height: 16.8px;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					@include shrift;
+				}
+
+				h5 {
+					margin: 5px 0;
+					color: #45525B;
+					@include shrift;
+					font-size: 20px;
+				}
+
+				&_house {
+					@include evenly;
+					width: 35%;
+
+					&-beds {
+						@include evenly;
+						width: 50%;
+
+						h5 {
+							color: #45525B;
+							@include shrift;
+							font-size: 12px;
+							line-height: 16.8px;
+						}
+					}
+				}
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 35%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+#people {
+	margin: 80px 80px;
+	@include calin;
+	@include between;
+
+	.people {
+
+		&--text {
+			width: 30%;
+			float: left;
+
+			h4 {
+				@include our;
+			}
+
+			h2 {
+				@include how;
+			}
+
+			p {
+				@include let;
+
+			}
+		}
+
+		&--agent {
+			margin: 40px 0;
+			width: 70%;
+			float: right;
+			@include cjustalin;
+
+			.swiper {
+				padding: 0 80px;
+				width: 60%;
+				height: 20%;
+			}
+
+			.swiper-slide {
+				font-size: 18px;
+				background: #fff;
+				@include cjustalin;
+
+				&-ava {
+					h4 {
+						@include sans;
+						font-size: 20px;
+						padding: 5px 0;
+
+					}
+
+					h5 {
+						@include sans;
+						font-size: 16px;
+						@include set;
+
+					}
+				}
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 30%;
+				height: 10%;
+				object-fit: cover;
+				padding: 0 10px;
+			}
+
+			.swiper-button-next {
+				position: absolute;
+				cursor: pointer;
+				color: #98a0a6;
+
+			}
+
+			.swiper-button-next::after {
+				content: "";
+				background-size: contain;
+				background-repeat: no-repeat;
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-button-prev::before {
+				content: "Назад";
+			}
+		}
+	}
+}
+
+#market {
+	.market {
+		&--text {
+			h4 {
+				text-align: center;
+				@include our
+			}
+
+			h2 {
+				text-align: center;
+				margin: 8px 0;
+				@include how;
+			}
+		}
+
+
+		&-slid {
+			width: 100%;
+
+			.swiper {
+				padding: 40px 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-slide {
+				background: #fff;
+				@include column;
+
+				&-let {
+					padding: 0 30px;
+
+					h5 {
+						@include noshrift;
+						font-size: 12px;
+						line-height: 16.8px;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+					}
+
+					h4 {
+						width: 308px;
+						color: #45525B;
+						@include pro;
+						font-size: 16px;
+						line-height: 19.2px;
+						margin: 10px 0;
+
+					}
+
+					h6 {
+						color: #6F7278;
+						@include pro;
+						font-size: 13px;
+						line-height: 19.6px;
+					}
+				}
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 90%;
+				height: 220px;
+				object-fit: cover;
+				margin: 20px 0;
+			}
+		}
+	}
+}
+
+#found {
+	padding: 80px 0;
+
+	.found {
+		&--text {
+			margin: 50px 0;
+
+			h4 {
+				@include our
+			}
+
+			h2 {
+				margin: 8px 0;
+				@include how;
+			}
+		}
+
+		&--slid {
+			width: 100%;
+
+			.swiper {
+				width: 100%;
+				height: 100%;
+			}
+
+			.swiper-slide {
+				padding: 35px 0 0 35px;
+				width: 404px;
+				height: 286px;
+				border-radius: 4px;
+				border: 1px solid rgba(82, 80, 59, 0.10);
+				background: #FFF;
+				font-size: 18px;
+				background: #fff;
+				display: flex;
+
+				&_lorem {
+					&-star {
+						padding: 10px 0;
+						color: #52503B;
+						display: flex;
+					}
+
+					h4 {
+						color: #333;
+						font-size: 24px;
+						@include pro;
+						line-height: 28.8px;
+					}
+
+					p {
+						color: #333;
+						font-family: Poppins, sans-serif;
+						font-size: 15px;
+						padding: 15px 0;
+						width: 514px;
+					}
+
+					&-nate {
+						display: flex;
+
+						h5 {
+							padding: 5px 10px;
+							color: #45525B;
+							@include pro;
+							font-size: 16px;
+							line-height: 16px;
+							@include pro;
+						}
+
+						&-sem {
+							width: 2px;
+							height: 24px;
+							background: #FF8A63;
+						}
+					}
+				}
+			}
+
+			.swiper-slide img {
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+#listing {
+	background: #45525B;
+	height: 399px;
+	text-align: center;
+	@include column;
+	@include cjustalin;
+
+	.listing {
+		@include column;
+		@include cjustalin;
+
+		h4 {
+			color: #FAFAFC;
+			font-size: 14px;
+			@include shrift;
+			line-height: 19.6px;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+
+		h2 {
+			color: #FFF;
+			font-size: 36px;
+			@include shrift;
+			line-height: 43.2px;
+			padding: 10px 0;
+		}
+
+		p {
+			padding: 30px 0;
+			color: #FAFAFC;
+			font-size: 18px;
+			@include shrift;
+			line-height: 21.6px;
+		}
+
+		&-btn {
+			@include evenly;
+			@include calin;
+			width: 280px;
+
+			&_one {
+				width: 102px;
+				@include text;
+			}
+
+			&_two {
+				@include text;
+				font-size: 15px;
+				width: 122px;
+			}
+		}
+	}
+}
+
+#footer {
+	height: 563px;
+	@include column;
+	@include calin;
+	background: #292C32;
+
+	.footer {
+		@include column;
+		@include calin;
+
+		&-img {
+			padding: 80px 0;
+		}
+
+		&-pages {
+			width: 100%;
+
+			&_about {
+				@include around;
+				width: 100%;
+
+				&-start {
+					h5 {
+						@include h5f;
+					}
+
+					h6 {
+						@include h6l;
+					}
+				}
+
+				&-submit {
+					margin-bottom: 60px;
+
+					h5 {
+						@include h5f;
+					}
+
+					h6 {
+						@include h6l;
+					}
+
+					.custom-search {
+						position: relative;
+						width: 300px;
+					}
+
+					.custom-search-input {
+						width: 388px;
+						height: 43px;
+						flex-shrink: 0;
+						border-radius: 8px;
+						border: 1px solid #E5E7EB;
+						background: #F9FAFB;
+						padding: 10px 100px 10px 20px;
+						line-height: 1;
+						box-sizing: border-box;
+						outline: none;
+					}
+
+					.custom-search-botton {
+						position: absolute;
+						right: -76px;
+						top: 3px;
+						bottom: 3px;
+						border: 0;
+						background: #3A4443;
+						color: #fff;
+						outline: none;
+						border-radius: 10px;
+						width: 73px;
+					}
+				}
+			}
+
+			&_legal {
+				@include between;
+				margin: 25px 6px;
+				@include calin;
+
+				&-text {
+					p {
+						@include h6l;
+					}
+				}
+
+				&-icon {
+					@include around;
+					width: 180px;
+					color: #fff;
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}
